@@ -7,7 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EWTask.h"
 
-@interface EWEditTaskViewController : UIViewController
+@protocol EWEditTaskViewControllerDelegate <NSObject>
+
+-(void)didUpdateTask;
+
+@end
+
+@interface EWEditTaskViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate>
+
+@property (strong, nonatomic) EWTask *task;
+@property (weak, nonatomic) id <EWEditTaskViewControllerDelegate> delegate;
+
+@property (strong, nonatomic) IBOutlet UITextField *textField;
+@property (strong, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
+
+- (IBAction)savebarButtonItemPressed:(UIBarButtonItem *)sender;
 
 @end

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>64C5B0FF-D737-410E-ABBF-3AC8C5E33D16</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Overdue</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BD6F8EED-4078-4D26-B8F4-B6A8C0F4F59E</key>
+		<string>https://github.com/eddie1707/Overdue.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Overdue.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BD6F8EED-4078-4D26-B8F4-B6A8C0F4F59E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/eddie1707/Overdue.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BD6F8EED-4078-4D26-B8F4-B6A8C0F4F59E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BD6F8EED-4078-4D26-B8F4-B6A8C0F4F59E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Overdue</string>
+		</dict>
+	</array>
+</dict>
+</plist>

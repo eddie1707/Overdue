@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EWAddTaskViewController.h"
+#import "EWDetailTaskViewController.h"
 
-@interface EWViewController : UIViewController
+@interface EWViewController : UIViewController <EWAddTaskViewControllerDelegate, UITableViewDataSource, UITableViewDelegate, EWDetailTaskViewControllerDelegate>
+
+@property (strong, nonatomic) NSMutableArray *taskObjects;
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+- (IBAction)reorderBarButtonItemPressed:(UIBarButtonItem *)sender;
+- (IBAction)addTaskBarButtonItemPressed:(UIBarButtonItem *)sender;
 
 @end

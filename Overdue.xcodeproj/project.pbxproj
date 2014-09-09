@@ -21,6 +21,10 @@
 		E805757219B5ED4C00B57723 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E805755419B5ED4C00B57723 /* UIKit.framework */; };
 		E805757A19B5ED4C00B57723 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E805757819B5ED4C00B57723 /* InfoPlist.strings */; };
 		E805757C19B5ED4C00B57723 /* OverdueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E805757B19B5ED4C00B57723 /* OverdueTests.m */; };
+		E805758719B5EDE400B57723 /* EWAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E805758619B5EDE400B57723 /* EWAddTaskViewController.m */; };
+		E805758A19B5EE0A00B57723 /* EWDetailTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E805758919B5EE0A00B57723 /* EWDetailTaskViewController.m */; };
+		E805758D19B5EE2000B57723 /* EWEditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E805758C19B5EE2000B57723 /* EWEditTaskViewController.m */; };
+		E805759219B5F56800B57723 /* EWTask.m in Sources */ = {isa = PBXBuildFile; fileRef = E805759119B5F56800B57723 /* EWTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		E805757719B5ED4C00B57723 /* OverdueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OverdueTests-Info.plist"; sourceTree = "<group>"; };
 		E805757919B5ED4C00B57723 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E805757B19B5ED4C00B57723 /* OverdueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverdueTests.m; sourceTree = "<group>"; };
+		E805758519B5EDE400B57723 /* EWAddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWAddTaskViewController.h; sourceTree = "<group>"; };
+		E805758619B5EDE400B57723 /* EWAddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWAddTaskViewController.m; sourceTree = "<group>"; };
+		E805758819B5EE0A00B57723 /* EWDetailTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWDetailTaskViewController.h; sourceTree = "<group>"; };
+		E805758919B5EE0A00B57723 /* EWDetailTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWDetailTaskViewController.m; sourceTree = "<group>"; };
+		E805758B19B5EE2000B57723 /* EWEditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWEditTaskViewController.h; sourceTree = "<group>"; };
+		E805758C19B5EE2000B57723 /* EWEditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWEditTaskViewController.m; sourceTree = "<group>"; };
+		E805759019B5F56800B57723 /* EWTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWTask.h; sourceTree = "<group>"; };
+		E805759119B5F56800B57723 /* EWTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +129,13 @@
 				E805756219B5ED4C00B57723 /* Main.storyboard */,
 				E805756519B5ED4C00B57723 /* EWViewController.h */,
 				E805756619B5ED4C00B57723 /* EWViewController.m */,
+				E805758519B5EDE400B57723 /* EWAddTaskViewController.h */,
+				E805758619B5EDE400B57723 /* EWAddTaskViewController.m */,
+				E805758819B5EE0A00B57723 /* EWDetailTaskViewController.h */,
+				E805758919B5EE0A00B57723 /* EWDetailTaskViewController.m */,
+				E805758B19B5EE2000B57723 /* EWEditTaskViewController.h */,
+				E805758C19B5EE2000B57723 /* EWEditTaskViewController.m */,
+				E805758F19B5F54E00B57723 /* Models */,
 				E805756819B5ED4C00B57723 /* Images.xcassets */,
 				E805755719B5ED4C00B57723 /* Supporting Files */,
 			);
@@ -150,6 +169,15 @@
 				E805757819B5ED4C00B57723 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E805758F19B5F54E00B57723 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E805759019B5F56800B57723 /* EWTask.h */,
+				E805759119B5F56800B57723 /* EWTask.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E805758A19B5EE0A00B57723 /* EWDetailTaskViewController.m in Sources */,
+				E805759219B5F56800B57723 /* EWTask.m in Sources */,
+				E805758D19B5EE2000B57723 /* EWEditTaskViewController.m in Sources */,
 				E805756719B5ED4C00B57723 /* EWViewController.m in Sources */,
 				E805756119B5ED4C00B57723 /* EWAppDelegate.m in Sources */,
 				E805755D19B5ED4C00B57723 /* main.m in Sources */,
+				E805758719B5EDE400B57723 /* EWAddTaskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,10 +409,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Overdue/Overdue-Prefix.pch";
 				INFOPLIST_FILE = "Overdue/Overdue-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,10 +424,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Overdue/Overdue-Prefix.pch";
 				INFOPLIST_FILE = "Overdue/Overdue-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -457,6 +493,7 @@
 				E805758119B5ED4C00B57723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E805758219B5ED4C00B57723 /* Build configuration list for PBXNativeTarget "OverdueTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +502,7 @@
 				E805758419B5ED4C00B57723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
